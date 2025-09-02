@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>text generator</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI text Generator</h1>
+        <h1>AI Poem Generator</h1>
       </header>
 
       <main id="text-generator-form">
@@ -20,7 +22,8 @@
             placeholder="Write your text here"
             autofocus
             autocomplete="off"
-            class="instructions" />
+            class="instructions"
+            id="user-instructions" />
           <input type="submit" class="submit-button" />
         </form>
         <div class="generated-text" id="submited-text">

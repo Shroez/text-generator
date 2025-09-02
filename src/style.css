@@ -57,6 +57,10 @@ form {
   box-shadow: 0px, 4px, 30px, 0px rgba(65, 50, 100, 0.08);
 }
 
+.generated-text strong {
+  color: rgb(143, 161, 207);
+}
+
 footer {
   text-align: center;
   font-size: 13px;
