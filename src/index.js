@@ -1,7 +1,6 @@
 function displayText(response) {
   // response.data.answer
 
-  console.log("text generated");
   new Typewriter("#submited-text", {
     strings: response.data.answer,
     autoStart: true,
@@ -27,10 +26,6 @@ function generateText(event) {
   ⏳Generating a poem about ${instructionsInput.value} for you
   </div>
   `;
-
-  console.log("Generating text");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`context: ${context}`);
 
   axios.get(apiUrl).then(displayText);
 }
