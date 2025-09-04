@@ -16,24 +16,20 @@
       </header>
 
       <main id="text-generator-form">
-        <form>
-          <input
-            type="text"
-            placeholder="Write your text here"
-            autofocus
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions" />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="generated-text" id="submited-text">
-          Text goes here
-          <br />
-          Text goes here
-          <br />
-          Text goes here
-          <br />
+        <div class="form-container">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter a word to create a poem"
+              autofocus
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions" />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Sun, Garden or Rain</div>
         </div>
+        <div class="generated-text hidden" id="submited-text"></div>
         <br />
       </main>
 

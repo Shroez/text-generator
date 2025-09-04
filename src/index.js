@@ -20,6 +20,14 @@ function generateText(event) {
     "you are a romantic poem expert and love to write clear, short poems, your mission is to generate a four line poem in html format. make sure to separate each line, and to follow the users instructions. also sign your poem with 'SheCodes AI' wrapped with <strong> at the end. dont show the ` ` in the text ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let textElement = document.querySelector("#submited-text");
+  textElement.classList.remove("hidden");
+  textElement.innerHTML = ` 
+  <div class="blink"> 
+  ⏳Generating a poem about ${instructionsInput.value} for you
+  </div>
+  `;
+
   console.log("Generating text");
   console.log(`Prompt: ${prompt}`);
   console.log(`context: ${context}`);
